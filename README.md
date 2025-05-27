@@ -45,31 +45,34 @@
 ```bash
 git clone https://github.com/your-username/TargetVision.git
 cd CNN_Yolo-main
+```
 
-2. Create a Virtual Environment (Optional)
+### 2. Create a Virtual Environment (Optional)
+
+```bash
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Run YOLO Detection on Video
+### 4. Run YOLO Detection on Video\
+
+```bash
 cd yolo-detection
 python yolo_detect.py --source path_to_video.mp4 --weights yolov4-tiny.weights
+```
 
-5. Run CNN Classification on YOLO Outputs
+### 6. Run CNN Classification on YOLO Outputs
+
+```bash
 cd cnn-classifier
 python predict.py --input ../output_crops/
+```
 
-📈 Example Use Cases
-Surveillance & Security
-
-Traffic Analysis
-
-Sports Player Detection
-
-Smart Retail (detect people, items)
-
-Industrial Quality Check
 
 
